@@ -1283,7 +1283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.5.1, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.6":
+"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.5.1, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.6":
   version: 7.8.3
   resolution: "@babel/runtime@npm:7.8.3"
   dependencies:
@@ -3096,6 +3096,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap@npm:4.0.0":
+  version: 4.0.0
+  resolution: "bootstrap@npm:4.0.0"
+  peerDependencies:
+    jquery: 1.9.1 - 3
+    popper.js: ^1.12.9
+  checksum: bfce167c334fe99624fbdbf6d72ec7f0a6f21b4f50846d37b72511c15d2b4336859944f185b879955ced6aa5c6f7089de9d2abba1dbc03eccef9c0ddcb28b95a
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -3576,6 +3586,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:^2.2.3":
+  version: 2.2.6
+  resolution: "classnames@npm:2.2.6"
+  checksum: f04e8b5b3ee2c7c4deec538752f364c6e61bf4459e011dd12553bcab87d25b4d5778a6e48a2f704b2ae65b1e89b727046c102aa4a3a91e522723f96771286095
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:4.2.x":
   version: 4.2.1
   resolution: "clean-css@npm:4.2.1"
@@ -3858,9 +3875,12 @@ __metadata:
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
+    bootstrap: 4.0.0
     react: ^16.12.0
     react-dom: ^16.12.0
+    react-popper: 0.9.2
     react-scripts: 3.3.0
+    reactstrap: 5.0.0
   languageName: unknown
   linkType: soft
 
@@ -4726,6 +4746,15 @@ __metadata:
   dependencies:
     utila: ~0.4
   checksum: 04b408624567fab06389df4d551847ee5be1798de3e82dce4803ef85cd09c78cb1894308dfdad24c8275671d76379f6caa2fb49fc8f9fe97475efe5adcad6d9f
+  languageName: node
+  linkType: hard
+
+"dom-helpers@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "dom-helpers@npm:3.4.0"
+  dependencies:
+    "@babel/runtime": ^7.1.2
+  checksum: aa9d57a13df3447f7dd6cf3276eebcdd3e567a212fa8146c62c281de33ae35c89dd05b48cb55396e74da37ea212457d5913de09cf432ad9c55900f69b7ecd731
   languageName: node
   linkType: hard
 
@@ -8234,6 +8263,20 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"lodash.isfunction@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "lodash.isfunction@npm:3.0.9"
+  checksum: 6df69c5ea54fcead50444821fe7415fb16840db2059ab186aa7aae97ed2046ea30d3253c1ca8b026ca8878daebd845a70d6a3e1816f31084c7b8ec214c92f5b3
+  languageName: node
+  linkType: hard
+
+"lodash.isobject@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "lodash.isobject@npm:3.0.2"
+  checksum: 934343fe0065c8990518f7e38b103f36b04ce45d88b887e9b76a66b9045a362a394a638f1230d607fffc2e70c34a1ee6c8f3ee93b2965cca8b76b9c8f02a459b
+  languageName: node
+  linkType: hard
+
 "lodash.memoize@npm:^4.1.2":
   version: 4.1.2
   resolution: "lodash.memoize@npm:4.1.2"
@@ -8264,6 +8307,13 @@ fsevents@^1.2.7:
   dependencies:
     lodash._reinterpolate: ^3.0.0
   checksum: 41e4244fe816fa34d7b82e51b9417ab6074275348a358359c2dad5315a002dd8d56a30913a3f4ba24165e0c1ace1310f8fdb0ef8bedca893abb4e5846b9afa40
+  languageName: node
+  linkType: hard
+
+"lodash.tonumber@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "lodash.tonumber@npm:4.0.3"
+  checksum: 85ca3670ce3b30958bd1547aacaf7396cd341e3d7d2f0fdae3f224eb8b1f04086e4f6ab50c698e4a2f550c0dbac91a91f4be4b8ae82a5e848f61da8d3d4c86ce
   languageName: node
   linkType: hard
 
@@ -9890,6 +9940,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"popper.js@npm:^1.12.9, popper.js@npm:^1.14.1":
+  version: 1.16.1
+  resolution: "popper.js@npm:1.16.1"
+  checksum: 2bee5c5dd2db53b27b540093b292745880b31453d91722e216814f1aa42bb07ec83ae2d0a0b43521b8f47be46a41499b79e6685bdeee43327d445c92b03892ae
+  languageName: node
+  linkType: hard
+
 "portfinder@npm:^1.0.25":
   version: 1.0.25
   resolution: "portfinder@npm:1.0.25"
@@ -10819,7 +10876,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -11107,6 +11164,39 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-lifecycles-compat@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "react-lifecycles-compat@npm:3.0.4"
+  checksum: 5845821224611602cb37ea3947d73efe619666a2f8ad7dbadd82bcdae823c499de214d39b3503e9fbf8da3daa2c2483e21ce01bdd65d6cce99dd2f42e3c838dc
+  languageName: node
+  linkType: hard
+
+"react-popper@npm:0.9.2":
+  version: 0.9.2
+  resolution: "react-popper@npm:0.9.2"
+  dependencies:
+    popper.js: ^1.14.1
+    prop-types: ^15.6.1
+  peerDependencies:
+    react: 0.14.x || ^15.0.0 || ^16.0.0
+    react-dom: 0.14.x || ^15.0.0 || ^16.0.0
+  checksum: 282870bdf724cd0923aa31e4cce4b4fdcd78c2c29d54c5be7ea08da768f1ecb5519ef905e1dee4de1e8fb3ec4ea813958ef07e2da279cd7f12cfe87245d8a1f7
+  languageName: node
+  linkType: hard
+
+"react-popper@npm:^0.8.3":
+  version: 0.8.3
+  resolution: "react-popper@npm:0.8.3"
+  dependencies:
+    popper.js: ^1.12.9
+    prop-types: ^15.6.0
+  peerDependencies:
+    react: 0.14.x || ^15.0.0 || ^16.0.0
+    react-dom: 0.14.x || ^15.0.0 || ^16.0.0
+  checksum: 76fe78e1d3d97e65f0b514874e7cfd56b051d9f5eabbd7ce7d514ed7a8ba1e4a7610dee0131cc41184f97ebc70712b44c47e6717846810e220a3ec9de9c90740
+  languageName: node
+  linkType: hard
+
 "react-scripts@npm:3.3.0":
   version: 3.3.0
   resolution: "react-scripts@npm:3.3.0"
@@ -11178,6 +11268,21 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-transition-group@npm:^2.2.1":
+  version: 2.9.0
+  resolution: "react-transition-group@npm:2.9.0"
+  dependencies:
+    dom-helpers: ^3.4.0
+    loose-envify: ^1.4.0
+    prop-types: ^15.6.2
+    react-lifecycles-compat: ^3.0.4
+  peerDependencies:
+    react: ">=15.0.0"
+    react-dom: ">=15.0.0"
+  checksum: 83e1c71ef3295d3f915f61627015501cd48c43c0cf37738614dc807a6664c236c81fc80e0109502e0600e508f4281ca6ba17b36803959e64ec2a9a304e090cbc
+  languageName: node
+  linkType: hard
+
 "react@npm:^16.12.0":
   version: 16.12.0
   resolution: "react@npm:16.12.0"
@@ -11186,6 +11291,24 @@ fsevents@^1.2.7:
     object-assign: ^4.1.1
     prop-types: ^15.6.2
   checksum: b352f012d0f605d93f0c03f8293d1c7704d7a0559b52ef90f40bec181072a40badc877dd60556b3ae3eb57bbfd91ed9a5ff3ecb154525125fbe7d1394067b321
+  languageName: node
+  linkType: hard
+
+"reactstrap@npm:5.0.0":
+  version: 5.0.0
+  resolution: "reactstrap@npm:5.0.0"
+  dependencies:
+    classnames: ^2.2.3
+    lodash.isfunction: ^3.0.9
+    lodash.isobject: ^3.0.2
+    lodash.tonumber: ^4.0.3
+    prop-types: ^15.5.8
+    react-popper: ^0.8.3
+    react-transition-group: ^2.2.1
+  peerDependencies:
+    react: ^16.0.0
+    react-dom: ^16.0.0
+  checksum: dd9402852030b9999ea93ef2c4c8a5e7f09a950dd5178fff2b0211e57808207f286d3e6aa8cc8c70bbeda31073e77e393c0af55de6defe3f7ccbd9f335827a01
   languageName: node
   linkType: hard
 
