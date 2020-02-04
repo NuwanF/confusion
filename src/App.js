@@ -6,8 +6,8 @@ class App extends Component {
 
   render(){
     return (
-      <div>
-        <Main/>
+      <div className="App">
+        <Main />
       </div>
     );
   }
