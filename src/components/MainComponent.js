@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import './HomeComponent';
 import Home from './HomeComponent';
+import About from './AboutComponent';
 import Menu from './MenuComponent';
 import DishDetail from './DishDetailComponent';
 import Contact from './ContactComponent';
@@ -39,7 +40,6 @@ class Main extends Component {
                 
             );
         }
-
         
         const DishWithId = ({match}) => {
             return(
@@ -56,8 +56,9 @@ class Main extends Component {
             <div>
                 <Header/>
                 <Switch>
-                    <Route path='/home' component={HomePage} />
-                    <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} />} />
+                    <Route path='/home' component={HomePage}/>
+                    <Route path='/aboutus' component={() => <About leaders={this.state.leaders}/>}/>
+                    <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes}/>}/>
                     <Route path='/menu/:dishId' component={DishWithId}/>
                     <Route exact path='/contactus' component={Contact}/>
                     <Redirect to="/home" />
