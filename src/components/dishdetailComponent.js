@@ -1,8 +1,9 @@
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem
+    Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem, Button
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
+import CommentForm from './CommentForm';
 
 const RenderDish = ({dish}) => {
     if (dish != null) return (
@@ -53,12 +54,13 @@ const DishDetail = (props) => {
                     <RenderDish dish={props.dish}/>
                 </div>
                 <div className="col-12 col-md-5 m-1">
-                    <RenderComments comments={comments}/>           
+                    <RenderComments comments={comments}/>   
+                    <CommentForm/>        
                 </div>
-            </div>
+                
+            </div>                        
         </div>            
     );
 }
-
 
 export default DishDetail;
