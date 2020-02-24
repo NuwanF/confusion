@@ -35,6 +35,7 @@ const RenderComments = ({comments}) => {
         <div>
             {heading}
             {commentList}
+            <CommentForm/>
         </div>            
     );
 }
@@ -53,7 +54,7 @@ class CommentForm extends Component{
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.RenderComments = this.RenderComments.bind(this);
+        this.newComment = this.newComment.bind(this);
     }
 
     handleSubmit(values) {
@@ -67,7 +68,7 @@ class CommentForm extends Component{
         });
     }
 
-    RenderComments = () => {
+    newComment = () => {
 
         const required = (val) => val && val.length;
         const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -147,7 +148,7 @@ class CommentForm extends Component{
                     &nbsp;
                     Submit Comment
                 </Button>
-                {this.RenderComments()}
+                {this.newComment()}
             </React.Fragment>
         );
     }
@@ -170,8 +171,7 @@ const DishDetail = (props) => {
                     <RenderDish dish={props.dish}/>
                 </div>
                 <div className="col-12 col-md-5 m-1">
-                    <RenderComments comments={comments}/>   
-                    <CommentForm/>        
+                    <RenderComments comments={comments}/>                               
                 </div>
                 
             </div>                        
