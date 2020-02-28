@@ -3904,6 +3904,8 @@ __metadata:
     react-scripts: 3.3.0
     reactstrap: 5.0.0
     redux: 3.7.2
+    redux-logger: 3.0.6
+    redux-thunk: 2.2.0
   languageName: unknown
   linkType: soft
 
@@ -4514,6 +4516,13 @@ __metadata:
   version: 0.2.0
   resolution: "decode-uri-component@npm:0.2.0"
   checksum: 4ec60208b36c39b72e4e4a203cdcca54641d61ef0588b2cb96732a5f51421ac10a3cd5497ec0ec146164ff0963af2f21f01207194d31af3e95a591581f1660e5
+  languageName: node
+  linkType: hard
+
+"deep-diff@npm:^0.3.5":
+  version: 0.3.8
+  resolution: "deep-diff@npm:0.3.8"
+  checksum: f38370a9cc80ef60b641f835be1326b07169105b9537734c733e73c85ee2296972c93f0a6ea62cc0309ac82e7a03f0db241c47a2384085a84fd5d924dbb82e2b
   languageName: node
   linkType: hard
 
@@ -11588,6 +11597,22 @@ fsevents@^1.2.7:
     indent-string: ^4.0.0
     strip-indent: ^3.0.0
   checksum: 55983b363f96f5b55663c001c1b9cb4e090d82e18ce6baad1076d6aac400306f8d2f45e9bdaf11e7a4400660b95a81e3251eb2c8cfc6df175105be5bb778fcd4
+  languageName: node
+  linkType: hard
+
+"redux-logger@npm:3.0.6":
+  version: 3.0.6
+  resolution: "redux-logger@npm:3.0.6"
+  dependencies:
+    deep-diff: ^0.3.5
+  checksum: 92cfef73bbb694e3bf042176a31d67e95c5acbe44989612acbc5a3cea0b33c907f500e700707f8e9aa6f355f471f989aaae8abf9551fd55ca494c98d3526f93c
+  languageName: node
+  linkType: hard
+
+"redux-thunk@npm:2.2.0":
+  version: 2.2.0
+  resolution: "redux-thunk@npm:2.2.0"
+  checksum: 66711fed452a8d8e907f3c45e572b8a35251e57995332a1db7db6ddbfa4c6f20abc75710153e5e575adc8afea6eef92794bc72165db2797b25dc083172e5885c
   languageName: node
   linkType: hard
 
