@@ -3504,6 +3504,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chain-function@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "chain-function@npm:1.0.1"
+  checksum: eadf75cbede26e0440619fb3d508cd642ed828633f2df7c0cd7cbf622006f1b449db0f5ee6c08fb299e9d6ff6fdb0c4700d31da6903f3686f071ef04b617df9d
+  languageName: node
+  linkType: hard
+
 "chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.0.1, chalk@npm:^2.1.0, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
@@ -3903,6 +3910,7 @@ __metadata:
     react-redux-form: 1.16.8
     react-router-dom: 4.2.2
     react-scripts: 3.3.0
+    react-transition-group: 2.3.0
     reactstrap: 5.0.0
     redux: 3.7.2
     redux-logger: 3.0.6
@@ -4792,7 +4800,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-helpers@npm:^3.4.0":
+"dom-helpers@npm:^3.2.0, dom-helpers@npm:^3.4.0":
   version: 3.4.0
   resolution: "dom-helpers@npm:3.4.0"
   dependencies:
@@ -11464,6 +11472,22 @@ fsevents@^1.2.7:
   bin:
     react-scripts: ./bin/react-scripts.js
   checksum: f7ff85f91b264c55c4208f8a8f9b9aaa733e7611a8e44ecbbaeac8f5c17770c8ed30cdc0e309032c612716c2f789f1582222ca9300e30820d0a8288bfb753693
+  languageName: node
+  linkType: hard
+
+"react-transition-group@npm:2.3.0":
+  version: 2.3.0
+  resolution: "react-transition-group@npm:2.3.0"
+  dependencies:
+    chain-function: ^1.0.0
+    dom-helpers: ^3.2.0
+    loose-envify: ^1.3.1
+    prop-types: ^15.5.8
+    warning: ^3.0.0
+  peerDependencies:
+    react: ">=15.0.0"
+    react-dom: ">=15.0.0"
+  checksum: 23bcc519fc2e86dfafc48ec40e995c5d1f0cbf61477469a0bb383833ab0426743569885023c1b5ce56d39ffeee73a9c8ed682bd50749c75052f92e97bc003533
   languageName: node
   linkType: hard
 
