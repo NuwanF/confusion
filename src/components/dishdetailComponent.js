@@ -7,16 +7,24 @@ import {Link} from 'react-router-dom';
 import {LocalForm, Control, Errors} from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const RenderDish = ({dish}) => {
     if (dish != null) return (
-        <Card>
-            <CardImg top src={baseUrl + dish.image} alt={dish.name} />
-            <CardBody>
-                <CardTitle>{dish.name}</CardTitle>
-                <CardText>{dish.description}</CardText>
-            </CardBody>
-        </Card>
+        <FadeTransform in 
+            transformProps={{
+                exitTransform: 'scale(0.5) translateY(-50%)'
+            }}
+        >
+            <Card>
+                <CardImg top src={baseUrl + dish.image} alt={dish.name} />
+                <CardBody>
+                    <CardTitle>{dish.name}</CardTitle>
+                    <CardText>{dish.description}</CardText>
+                </CardBody>
+            </Card>
+        </FadeTransform>
+
     ); else return (
         <div></div>
     );
@@ -25,17 +33,22 @@ const RenderDish = ({dish}) => {
 const RenderComments = ({comments, postComment, dishId}) => {
     const commentList = comments.map((cmt) => {
         return (
-            <ul className="list-unstyled">
-                <li>{cmt.comment}</li>
-                <li>-- {cmt.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(cmt.date)))}</li>
-            </ul>                
+            <Fade in>
+                <ul className="list-unstyled">
+                    <li>{cmt.comment}</li>
+                    <li>-- {cmt.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(cmt.date)))}</li>
+                </ul> 
+            </Fade>               
         )
     });
+    
     const heading = comments.length > 0 ? <h4>Comments</h4> : "";
     return (
         <div>
             {heading}
-            {commentList}
+            <Stagger in>
+                {commentList}
+            </Stagger>            
             <CommentForm 
                 dishId={dishId}
                 postComment={postComment}
